@@ -11,7 +11,7 @@ module.exports = {
     'space-before-function-paren': 0,
     '@typescript-eslint/space-before-function-paren': 0,
     '@typescript-eslint/indent': 'off',
-    '@typescript-eslint/member-delimiter-style': 'warn',
+    '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/no-this-alias': ['off'],
     'no-case-declarations': 0,
     '@typescript-eslint/no-unused-vars': 'error',
@@ -19,4 +19,4 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': ['off'],
     '@typescript-eslint/no-var-requires': ['off']
   }
-};
+}
