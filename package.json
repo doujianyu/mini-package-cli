@@ -7,7 +7,7 @@
     ]
   },
   "scripts": {
-    "pretty": "prettier --write '{packages}/**/*.ts'",
+    "pretty": "prettier --write 'packages/**/*.ts'",
     "prepare": "husky install",
     "lint": "eslint packages/**/src --ext .ts --cache"
   },

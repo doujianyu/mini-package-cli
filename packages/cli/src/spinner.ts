@@ -1,15 +1,15 @@
-import * as ora from 'ora';
-const spinner = ora('Start');
+import * as ora from 'ora'
+const spinner = ora('Start')
 
 interface IMessage {
-  msg: 'start' | 'stop';
+  msg: 'start' | 'stop'
 }
 
 process.on('message', ({ msg }: IMessage) => {
   if (msg === 'start') {
-    spinner.start();
+    spinner.start()
   } else {
-    spinner.stop();
-    process.exit();
+    spinner.stop()
+    process.exit()
   }
-});
+})

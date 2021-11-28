@@ -1,46 +1,46 @@
 // path 模块
-const path = require('path');
+const path = require('path')
 // 解析外部模块 也就是 npm 包
-import resolve from '@rollup/plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve'
 // TS 插件
-const typescript = require('rollup-plugin-typescript2');
+const typescript = require('rollup-plugin-typescript2')
 // import { terser } from 'rollup-plugin-terser'
 // import clear from 'rollup-plugin-clear'
 
 // 可视化分析 Rollup 包, 查看哪些模块占用了空间
-import { visualizer } from 'rollup-plugin-visualizer';
-import { InputOptions, OutputOptions, Plugin } from 'rollup';
-import { getCwd, loadConfig } from '@mpc/utils';
+import { visualizer } from 'rollup-plugin-visualizer'
+import { InputOptions, OutputOptions, Plugin } from 'rollup'
+import { getCwd, loadConfig } from '@mpc/utils'
 
-const cleanup = require('rollup-plugin-cleanup');
+const cleanup = require('rollup-plugin-cleanup')
 // 添加 json 文件导入支持
-const json = require('@rollup/plugin-json');
+const json = require('@rollup/plugin-json')
 // 将 commonJS 模块转换为 ES6 （解析commonjs模块使用）
-const commonjs = require('@rollup/plugin-commonjs');
+const commonjs = require('@rollup/plugin-commonjs')
 // 开发时启动服务
-const serve = require('rollup-plugin-serve');
+const serve = require('rollup-plugin-serve')
 // 压缩代码
-const { uglify } = require('rollup-plugin-uglify');
+const { uglify } = require('rollup-plugin-uglify')
 
 const getPathFile = (pathName: string): string => {
-  return path.resolve(getCwd(), pathName);
-};
+  return path.resolve(getCwd(), pathName)
+}
 
-const userConfig = loadConfig();
+const userConfig = loadConfig()
 // 版本号
-const V = require(getPathFile('./package.json')).version;
+const V = require(getPathFile('./package.json')).version
 // 模块名称
-const M = userConfig.moduleName;
+const M = userConfig.moduleName
 // 是否生成声明文件
-const isDeclaration = userConfig.isDeclaration;
+const isDeclaration = userConfig.isDeclaration
 // 是否是开发模式
-const isDev = userConfig.isDev;
+const isDev = userConfig.isDev
 // 开发模式时的端口
-const port = userConfig.port;
+const port = userConfig.port
 // 打包的文件位置
-const distDir = userConfig.distDirName;
+const distDir = userConfig.distDirName
 // 是否是HTTPS
-const https = userConfig.https;
+const https = userConfig.https
 
 export const commonConfig: InputOptions = {
   input: getPathFile('./src/index.ts'),
@@ -85,7 +85,7 @@ export const commonConfig: InputOptions = {
         ]
       : [])
   ]
-};
+}
 
 export const outputs: OutputOptions[] = [
   {
@@ -107,7 +107,7 @@ export const outputs: OutputOptions[] = [
     name: M,
     banner: `/* ${M} version: '${V} */`
   }
-];
+]
 
 export const buildOutputs: OutputOptions[] = [
   {
@@ -141,4 +141,4 @@ export const buildOutputs: OutputOptions[] = [
       uglify()
     ]
   }
-];
+]
