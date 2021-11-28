@@ -1,0 +1,16 @@
+{
+  "name": "rollup-mpc",
+  "version": "1.0.0-alpha.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mpc start",
+    "build": "mpc build",
+    "release": "mpc publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
