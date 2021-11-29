@@ -1,4 +1,4 @@
-import execa = require('execa')
+import * as execa from 'execa'
 
 export const binRun = async (
   bin: string,
