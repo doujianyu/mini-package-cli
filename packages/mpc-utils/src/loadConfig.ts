@@ -1,4 +1,4 @@
-import { IConfig } from '@mpc/types'
+import { IConfig } from '@mini-npm-cli/types'
 import { getUserConfig } from './cwd'
 
 const loadConfig = (): IConfig => {

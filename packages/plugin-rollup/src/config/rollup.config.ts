@@ -10,7 +10,7 @@ const typescript = require('rollup-plugin-typescript2')
 // 可视化分析 Rollup 包, 查看哪些模块占用了空间
 import { visualizer } from 'rollup-plugin-visualizer'
 import { InputOptions, OutputOptions, Plugin } from 'rollup'
-import { getCwd, loadConfig } from '@mpc/utils'
+import { getCwd, loadConfig } from '@mini-npm-cli/utils'
 
 const cleanup = require('rollup-plugin-cleanup')
 // 添加 json 文件导入支持

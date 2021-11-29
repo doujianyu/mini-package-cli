@@ -1,5 +1,5 @@
 {
-  "name": "@mpc/types",
+  "name": "@mini-npm-cli/types",
   "version": "1.0.1",
   "description": "> TODO: description",
   "author": "doujianyu <377033746@qq.com>",
@@ -14,5 +14,5 @@
   "engines": {
     "node": ">=12"
   },
-  "gitHead": "4857551721c0f8a9fc5230045dc3b28a956f88bc"
+  "gitHead": "2a9111d64de33cbfa108ec9fffe7499761cc3c72"
 }

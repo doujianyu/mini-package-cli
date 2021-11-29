@@ -25,7 +25,7 @@ yargs(hideBin(process.argv))
   .command('start', 'start the project', {}, async () => {
     spinner.start()
 
-    const { loadPlugin } = await import('@mpc/utils')
+    const { loadPlugin } = await import('@mini-npm-cli/utils')
 
     debug('loadPlugin Start')
     const plugin = loadPlugin()
@@ -38,7 +38,7 @@ yargs(hideBin(process.argv))
   .command('build', 'build the project', {}, async () => {
     spinner.start()
 
-    const { loadPlugin } = await import('@mpc/utils')
+    const { loadPlugin } = await import('@mini-npm-cli/utils')
 
     debug('loadPlugin Start')
     const plugin = loadPlugin()

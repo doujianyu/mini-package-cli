@@ -1,5 +1,5 @@
 {
-  "name": "@mpc/plugin-rollup",
+  "name": "@mini-npm-cli/plugin-rollup",
   "version": "1.0.1",
   "description": "> TODO: description",
   "author": "doujianyu <377033746@qq.com>",
@@ -27,7 +27,7 @@
     "typescript": "4.4.3"
   },
   "dependencies": {
-    "@mpc/types": "^1.0.1"
+    "@mini-npm-cli/types": "^1.0.1"
   },
-  "gitHead": "4857551721c0f8a9fc5230045dc3b28a956f88bc"
+  "gitHead": "2a9111d64de33cbfa108ec9fffe7499761cc3c72"
 }

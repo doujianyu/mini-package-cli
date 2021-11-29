@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { IPlugin, IUserConfig } from '@mpc/types'
+import { IPlugin, IUserConfig } from '@mini-npm-cli/types'
 
 // 获取执行路径
 export const getCwd = (): string => {

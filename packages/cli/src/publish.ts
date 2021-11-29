@@ -1,6 +1,6 @@
 import { resolve } from 'path'
-import { getCwd, binRun, diffVersion } from '@mpc/utils'
-import { IAnswers } from '@mpc/types'
+import { getCwd, binRun, diffVersion } from '@mini-npm-cli/utils'
+import { IAnswers } from '@mini-npm-cli/types'
 
 const inquirer = require('inquirer')
 const fs = require('fs')
