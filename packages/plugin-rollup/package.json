@@ -27,7 +27,7 @@
     "typescript": "4.4.3"
   },
   "dependencies": {
-    "@mini-npm-cli/types": "^1.0.1"
+    "@mini-npm-cli/types": "^0.0.1"
   },
   "gitHead": "2a9111d64de33cbfa108ec9fffe7499761cc3c72"
 }

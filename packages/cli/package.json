@@ -18,7 +18,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@mini-npm-cli/utils": "^1.0.1",
+    "@mini-npm-cli/utils": "^0.0.1",
     "chalk": "4.1.2",
     "concurrently": "^6.4.0",
     "debug": "^4.3.2",
