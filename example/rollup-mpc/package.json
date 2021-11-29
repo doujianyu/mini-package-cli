@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@mini-npm-cli/cli": "^0.0.4",
-    "@mini-npm-cli/plugin-rollup": "^0.0.4"
+    "@mini-npm-cli/cli": "^0.0.10",
+    "@mini-npm-cli/plugin-rollup": "^0.0.10"
   },
   "dependencies": {}
 }
