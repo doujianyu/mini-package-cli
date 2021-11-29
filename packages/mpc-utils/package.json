@@ -17,8 +17,8 @@
   "engines": {
     "node": ">=12"
   },
-  "devDependencies": {
+  "gitHead": "2a9111d64de33cbfa108ec9fffe7499761cc3c72",
+  "dependencies": {
     "execa": "5.1.1"
-  },
-  "gitHead": "2a9111d64de33cbfa108ec9fffe7499761cc3c72"
+  }
 }
