@@ -1,6 +1,6 @@
 {
   "name": "@mini-npm-cli/cli",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "> TODO: description",
   "author": "doujianyu <377033746@qq.com>",
   "homepage": "",
@@ -21,7 +21,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@mini-npm-cli/utils": "^0.0.4",
+    "@mini-npm-cli/utils": "^0.0.6",
     "chalk": "4.1.2",
     "concurrently": "^6.4.0",
     "debug": "^4.3.2",
