@@ -8,9 +8,6 @@ const { redBright, red, green, blue } = require('chalk')
 const pckPath = resolve(getCwd(), './package.json')
 const pckJson = require(pckPath)
 
-console.log(redBright('即将发布新版本'))
-console.log(red('当前版本为: ', pckJson.version))
-
 // [当前的版本, 版本类型：内部版本alpha | 公测版本beta | 正式版本的候选版本rc | 正式版本]
 const [version = '', versionType = ''] = (pckJson.version as string).split('-')
 
@@ -72,6 +69,9 @@ const versions = [
 ]
 
 export const publishMethods = () => {
+  console.log(redBright('即将发布新版本'))
+  console.log(red('当前版本为: ', pckJson.version))
+
   inquirer
     .prompt([
       {
