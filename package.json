@@ -9,6 +9,7 @@
   "scripts": {
     "pretty": "prettier --write 'packages/**/*.ts'",
     "prepare": "husky install",
+    "publish": "lerna version --conventional-commits",
     "lint": "eslint packages/**/src --ext .ts --cache"
   },
   "devDependencies": {
