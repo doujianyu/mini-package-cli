@@ -33,6 +33,7 @@ yargs(hideBin(process.argv))
     spinner.stop()
 
     // 开始构建
+    debug('development Start')
     await plugin.developPlugin?.start?.()
   })
   .command('build', 'build the project', {}, async () => {
@@ -46,9 +47,11 @@ yargs(hideBin(process.argv))
     spinner.stop()
 
     // 开始构建
+    debug('build Start')
     await plugin.developPlugin?.build?.()
   })
   .command('publish', 'publish the project', {}, async () => {
+    debug('publish Start')
     publishMethods()
   })
   .demandCommand(1, 'You need at least one command before moving on')
