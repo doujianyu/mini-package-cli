@@ -6,6 +6,9 @@
       "packages/*"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "pretty": "prettier --write 'packages/**/*.ts'",
     "prepare": "husky install",
