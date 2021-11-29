@@ -84,7 +84,8 @@ export const commonConfig: InputOptions = {
           })
         ]
       : [])
-  ]
+  ],
+  external: [...(userConfig.external || [])]
 }
 
 export const outputs: OutputOptions[] = [

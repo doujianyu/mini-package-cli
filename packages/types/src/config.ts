@@ -15,6 +15,7 @@ export interface IUserConfig {
   distDirName?: string
   https?: boolean
   isDev?: boolean
+  external?: string[]
 }
 
 export interface IConfig {
@@ -24,6 +25,7 @@ export interface IConfig {
   distDirName: string
   https: boolean
   isDev: boolean
+  external: string[]
 }
 
 export interface IAnswers {

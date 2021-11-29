@@ -9,6 +9,7 @@ const loadConfig = (): IConfig => {
   const distDirName = userConfig.distDirName ?? 'dist'
   const https = userConfig.https ?? false
   const isDev = userConfig.isDev ?? process.env.NODE_ENV === 'development'
+  const external = userConfig.external ?? []
 
   const config: IConfig = {
     moduleName,
@@ -16,7 +17,8 @@ const loadConfig = (): IConfig => {
     port,
     distDirName,
     https,
-    isDev
+    isDev,
+    external
   }
 
   return config
