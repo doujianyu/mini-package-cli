@@ -1,6 +1,6 @@
 {
   "name": "@mini-npm-cli/plugin-rollup",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "> TODO: description",
   "author": "doujianyu <377033746@qq.com>",
   "homepage": "",
@@ -18,7 +18,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@mini-npm-cli/types": "^0.0.9",
+    "@mini-npm-cli/types": "^0.0.10",
     "@rollup/plugin-commonjs": "20.0.0",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "13.0.5",
